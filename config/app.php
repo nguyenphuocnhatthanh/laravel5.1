@@ -136,7 +136,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        App\Domain\RepositoryServiceProvider::class,
         /*
          * Application Service Providers...
          */

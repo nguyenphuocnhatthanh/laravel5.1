@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "a";
+});
+
+Route::resource('post', 'PostsController');
+get('getall', 'PostsController@getAll');
+
+get('event', function () {
+    event(new \App\Events\UserRegistered());
+
+    return 'Success';
 });
